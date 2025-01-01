@@ -1,0 +1,234 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* height: auto; */
+  padding-top: 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a58484;
+  padding: 20px 30px;
+  position: fixed;
+  z-index: 200;
+  /* height: 40px; */
+  width: 100%;
+  /* margin-bottom: 300px; */
+  top: 0;
+}
+
+.logo {
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.search-area input {
+  /* flex-grow: 1; */
+  margin: 0 10px;
+  padding: 10px;
+}
+.search-area input {
+  width: 70%;
+  padding:10px;
+  padding-right: 220px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+}
+.search-area input:focus{
+  border: 3px solid rebeccapurple;
+  outline-width: 0;
+  background-color: #071208;
+  color:#ffff;
+}
+
+
+.contact-button button {
+  background-color: #071208;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 60px;
+}
+
+.contact-button button:hover {
+  opacity:0.6;
+}
+.card-container{
+  margin:80px 10px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 397px;
+  width: 400px;
+  /* z-index: -200; */
+  margin-left: 60px;
+  border-radius: 10px;
+  border:2px solid rgba(22,66,199,2);
+}
+.card img{
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* border-radius: inherit; */
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.card-container{
+  display: flex;
+  justify-content: space-around;
+  /* margin-top:70px; */
+  /* background: linear-gradient(rgba(49,59,99,3),rgba(30,80,70,2)); */
+  /* padding-top: 30px;
+  margin-bottom: 30px; */
+  /* margin-left: 80px; */
+}
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.header-content p{
+  margin-right: 15px;
+}
+.card .cart{
+  position: absolute;
+  top:0px;
+  right: 0;
+  width: 40px;
+  background-color: #ffff;
+  border:2px solid #071208;
+  color:#ffff;
+  
+}
+.content-desrbtion{
+  padding-left: 10px;
+  /* margin-top: 10px; */
+}
+@media(max-width:768px)
+{
+  .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .search-area input {
+    margin: 0 20px;
+    padding: 5px;
+    width:100%;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 397px;
+    width: 400px;
+    /* z-index: -200; */
+    margin: 20px 10px;
+    border-radius: 10px;
+    border:2px solid rgba(22,66,199,2);
+  }
+}
+@media(max-width:480px){
+  .logo {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  .search-area input {
+    margin: 0 10px;
+    padding: 5px;
+    width:70%;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 397px;
+    width: 400px;
+    /* z-index: -200; */
+    margin: 10px 10px;
+    border-radius: 10px;
+    border:2px solid rgba(22,66,199,2);
+  }
+  /* .header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+  .header-content p{
+    margin-right: 15px;
+  } */
+  .card img{
+    overflow: hidden;
+    height: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* border-radius: inherit; */
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* margin-top:70px; */
+    /* background: linear-gradient(rgba(49,59,99,3),rgba(30,80,70,2)); */
+    /* padding-top: 30px; */
+    /* margin-bottom: 30px; */
+    /* margin-left: 80px; */
+  }
+  .contact-button button {
+    background-color: #071208;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 45px;
+  }
+  .search-area {
+    /* flex-grow: 1; */
+    position: relative;
+    left:20px;
+    padding: 10px;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media(max-width:320px ){
+  .logo {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding-right: 10px;
+    width:26%;
+    transform: scale(1.1);
+  }
+  .search-area {
+    /* flex-grow: 1; */
+    position: relative;
+    left:15px;
+    padding: 0px;
+    margin: 0;
+  }
+}
